@@ -1,0 +1,119 @@
+#body{
+
+}
+.container{
+    border-radius: 25px;
+    position: fixed;
+    direction: rtl;
+    top: 5%;
+    left: 15%;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 4%;
+    background-color: #41352d;
+    overflow-y: scroll;
+}
+.item, .typeItem{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    direction: rtl;
+    margin-top: 40px;
+    align-items: center;
+    flex-flow: wrap;
+}
+.item button{
+    flex-flow: wrap;
+    padding: 5px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid rgb(0, 192, 0);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.item button:hover{
+    background-color: rgb(0, 192, 0);
+}
+.button{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+.button button{
+    width: 50%;
+    height: 50px;
+    padding: 0.8% 0%;
+    background-color: rgba(0, 138, 0, 0);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: 2px solid rgb(0, 192, 0);
+}
+.button button:hover{
+    background-color: rgb(0, 192, 0);
+}
+.info{
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    width: 60%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    transition: 0.4s;
+}
+.info:focus{
+    background-color: white;
+    color: black;
+}
+label{
+    font-size: 18px;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 90%;
+        left: 2.5%;
+        height: 90%;
+        top: 5%;
+    }
+    .item{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        width: 80%;
+    }
+    .button{
+        width: 80%;
+    }
+    .button button{
+        width: 100%;
+    }
+    .info{
+        width: 80%;
+        padding: 10px;
+    }
+    .typeItem{
+        flex-direction: row;
+        width: 90%;
+        font-size: 15px;
+        justify-content: flex-start;
+
+    }
+}

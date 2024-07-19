@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="tableView.css">
+    <link rel="stylesheet" href="customerPopUp.css">
+    <style>
+      .navbar{
+        display: flex;
+        flex-direction: row;
+        direction: rtl;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .navbar button{
+        width: 15%;
+        margin: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-bottom : 2px solid orangered;
+        background-color: rgba(255, 69, 0, 0);
+        color: white;
+        transition: 0.4s;
+      }
+      .navbar button:hover{
+        background-color: orangered;
+      }
+    </style>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="navbar">
+      <button id="newOrders">جدید</button>
+      <button id="toBeSent">در انتظار ارسال</button>
+      <button id="delivererToBeFound">در انتظار پیک </button>
+      <button id="sentOrders">ارسال شده</button>
+    </div>
+    <table id="table">
+      <tr>
+        <th>کد سفارش</th>
+        <th>آدرس</th>
+        <th>مبلغ سفارش</th>
+        <th>لیست سفارش</th>
+      </tr>
+    </table>
+  </div>
+<script type="module" defer src="restaurantViewNewOrders.js"></script>
+</body>
+</html>

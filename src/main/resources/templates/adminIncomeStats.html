@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .titleBox{
+            width: 94%;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 2px solid orange;
+        }
+        .titleBox h1{
+            color: orangered;
+            font-size: 25px;
+            font-weight: 700;
+
+        }
+        .moneyBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            direction: rtl;
+        }
+        .moneyBox h2{
+            direction: rtl;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div style="display: flex; flex-direction: row; justify-content: center; padding: 20px 0">
+    <input type="text" placeholder="شماره ماه میلادی را وارد کنید:" id="monthNumber" style="width: 50%; padding: 8px 3px; text-align: center; font-size: 18px; font-weight: 800; outline: none; border-radius: 10px; color: orangered">
+</div>
+<div class="container">
+    <div class="titleBox">
+        <h1 class="title">رستوران ها</h1>
+    </div>
+    <div class="moneyBox">
+        <h2>مجموع در آمد:</h2>
+        <h2 id="restTotal" style="color: wheat"></h2>
+        <h2>سود بوقلمون:</h2>
+        <h2 id="interestFromRest" style="color: limegreen"></h2>
+    </div>
+</div>
+<div class="container">
+    <div class="titleBox">
+        <h1 class="title">پیک های موتوری</h1>
+    </div>
+    <div class="moneyBox">
+        <h2>مجموع در آمد:</h2>
+        <h2 id="delivTotal" style="color: wheat"></h2>
+        <h2>سود بوقلمون:</h2>
+        <h2 id="interestFromDeliv" style="color: limegreen"></h2>
+    </div>
+</div>
+<script src="adminIncomeStats.js" defer type="module"></script>
+</body>
+</html>

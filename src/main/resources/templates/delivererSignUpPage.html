@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ثبت نام پیک موتوری</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 15px; color: red; display: flex; flex-flow: wrap; text-align: right">کاربر گرامی در حال حاضر قادر به عضویت و فعالیت به عنوان پیک موتوری نیستید</h1>
+        <div class="item">
+            <label>نام</label>
+            <input type="text" id="name" class="input">
+        </div>
+        <div class="item">
+            <label>نام خانوادگی</label>
+            <input type="text" id="surName" class="input">
+        </div>
+        <div class="item">
+            <label>شماره موبایل</label>
+            <input type="text" id="mobile" class="input" maxlength="11">
+        </div>
+        <div class="item">
+            <label>شماره شبا</label>
+            <div class="item" style="margin: 0; align-items: center">
+                <input type="text" id="accountNo" class="input" placeholder="بدون IR وارد کنید" style="width: 90%" maxlength="24">
+                <span style="color: white; font-size: 16px; font-weight: 800">IR</span>
+            </div>
+        </div>
+        <div class="item">
+            <label>نام کاربری</label>
+            <input type="text" id="userName" class="input">
+        </div>
+        <div class="item">
+            <label>رمز عبور</label>
+            <input type="password" id="passWord" class="input">
+        </div>
+        <div class="item">
+            <label>تکرار رمز عبور</label>
+            <input type="password" id="repeatPassWord" class="input">
+        </div>
+        <div class="item">
+            <label>جنسیت</label>
+            <div class="input" style="border: none">
+                <label for="male">مذکر</label>
+                <input type="radio" id="male" name="gender">
+                <label for="female">مونث</label>
+                <input type="radio" id="female" name="gender">
+                <label for="other">سایر</label>
+                <input type="radio" id="other" name="gender">
+            </div>
+        </div>
+        <div class="button">
+            <select id="city" style="padding: 5px; width: 50%">
+                <option selected disabled>شهر را انتخاب فرمایید</option>
+                <option>تبریز</option>
+            </select>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="agree">
+            <p style="color: white; font-size: 16px; font-weight: 800">
+                <span onclick="window.open('http://localhost:8080/agreement', '_blank')" style="color: dodgerblue; font-weight: 900; cursor: pointer">قوانین سایت</span>  را مطالعه کرده ام و به طور کامل موافقت خود را تایید میکنم.
+            </p>
+        </div>
+        <div class="button">
+            <button id="submit" disabled>ثبت نام</button>
+        </div>
+    </div>
+<script type="module" defer src="delivererSignUp.js"></script>
+</body>
+</html>

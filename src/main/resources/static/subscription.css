@@ -1,0 +1,56 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 200px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: orangered 3px 3px 10px;
+    margin-left: 5%;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+.card:hover{
+    scale: 1.12;
+}
+.title{
+    color: #151515;
+    font-weight: 800;
+    font-size: 17px;
+}
+.itemBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px 0;
+    direction: rtl;
+}
+.capacity{
+    color: #00007e;
+    font-size: 50px;
+    font-weight: 900;
+}
+.price{
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+}
+.button{
+    width: 80%;
+    border: 1px solid orangered;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #151515;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.button:hover{
+    background-color: orangered;
+    color: white;
+}

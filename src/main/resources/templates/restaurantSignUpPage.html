@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ثبت نام رستوران</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="customerPopUp.css">
+  <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/mapp.min.css">
+  <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/fa/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <label>نام رستوران</label>
+      <input type="text" id="name" class="input">
+    </div>
+    <div class="item">
+      <label>شماره تماس</label>
+      <input type="text" id="phone" class="input" placeholder="همراه کد شهر" maxlength="11">
+    </div>
+    <div class="item">
+      <label>شهر</label>
+      <select id="city" style="width: 60%; padding: 5px">
+        <option selected disabled>شهر را انتخاب کنید</option>
+        <option>تبریز</option>
+      </select>
+    </div>
+    <div class="item">
+      <label>آدرس</label>
+      <input type="text" id="address" class="input">
+    </div>
+    <div class="item">
+      <label>نام مدیر</label>
+      <input type="text" id="managerName" class="input">
+    </div>
+    <div class="item">
+      <label>نام خانوادگی مدیر</label>
+      <input type="text" id="managerSurName" class="input">
+    </div>
+    <div class="item">
+      <label>شماره شبا</label>
+      <div class="item" style="margin:0; align-items: center">
+        <input type="text" id="accountNo" class="input" placeholder="بدون IR وارد کنید" style="width: 90%" maxlength="24">
+        <span style="color: white; font-size: 16px; font-weight: 800">IR</span>
+      </div>
+    </div>
+    <div class="item">
+      <label>نام کاربری</label>
+      <input type="text" id="userName" class="input">
+    </div>
+    <div class="item">
+      <label>رمز عبور</label>
+      <input type="password" id="passWord" class="input">
+    </div>
+    <div class="item">
+      <label>تکرار رمز عبور</label>
+      <input type="password" id="repeatPassWord" class="input">
+    </div>
+    <div class="item">
+      <label>ساعت کاری</label>
+      <div class="item">
+        <select id="hrFrom" style="width: 40%; padding: 5px">
+          <option selected disabled>شروع</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+        </select>
+        <span style="color: white; font-size: 16px; font-weight: bold">الی</span>
+        <select id="hrTo" style="width: 40%; padding: 5px">
+          <option selected disabled>پایان</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+        </select>
+      </div>
+    </div>
+    <div class="item">
+      <input type="checkbox" id="agree">
+      <p style="color: white; font-size: 16px; font-weight: 800">
+        <span onclick="window.open('http://localhost:8080/agreement', '_blank')" style="color: dodgerblue; font-weight: 900; cursor: pointer">قوانین سایت</span>  را مطالعه کرده ام و به طور کامل موافقت خود را تایید میکنم.
+      </p>
+    </div>
+    <div class="button">
+      <button id="viewMap">تعیین موقعیت نقشه</button>
+    </div>
+    <div class="button">
+      <button id="submit">ثبت نام</button>
+    </div>
+  </div>
+<script type="module" defer src="restaurantSignUp.js"></script>
+  <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.env.js"></script>
+  <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.min.js"></script>
+</body>
+</html>

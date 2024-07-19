@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>پنل رستوران</title>
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="item">
+            <h1 id="title">پنل رستوران</h1>
+        </div>
+        <img src="https://www.mahyashop.com/uploads/UserFiles/Images/Detail-Pics%2F%D8%A8%D9%88%D9%82%D9%84%D9%85%D9%88%D9%86%2FPRODUCT_turkey-03-02-03.png" id="logoImage">
+        <div class="item">
+            <div class="headerCart">
+            </div>
+            <div class="headerItem">
+                <span class="material-symbols-outlined" id="userIcon">storefront</span>
+                <span id="name">نام رستوران</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="toolBox">
+        <div class="navbar">
+            <ul>
+                <li class="navigatorLi">
+                    <span class="material-symbols-outlined" style="color: white">menu</span>
+                </li>
+                <li class="navigatorLi">
+                    <div>
+                        <span>عنوان اشتراک: </span>
+                        <span id="sub-title"></span>
+                    </div>
+                    <div>
+                        <span>تعداد باقیمانده: </span>
+                        <span id="sub-remaining"></span>
+                    </div>
+                </li>
+                <li class="navigatorLi" >
+                    <button class="navigatorBtn" id="viewWallet"> موجودی کیف پول : <span id="balance"> ریال </span></button>
+                </li>
+                <li class="navigatorLi" >
+                    <button class="navigatorBtn" id="viewProfile"><span class="material-symbols-outlined">storefront</span>مشاهده پروفایل</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="viewNewOrders"><span class="material-symbols-outlined">mark_chat_unread</span>مدیریت سفارش ها</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="viewFoodMenu"> <span class="material-symbols-outlined">restaurant_menu</span>مدیریت منوی غذا</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="viewAttachments" disabled><span class="material-symbols-outlined">liquor</span>مخلفات غذا</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="viewStatistics"><span class="material-symbols-outlined">bar_chart</span>آمار سفارش ها</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="buySubscription"><span class="material-symbols-outlined">support_agent</span>خرید اشتراک</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="requestForSupport"><span class="material-symbols-outlined">support_agent</span>درخواست پشتیبانی</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="exit"><span class="material-symbols-outlined">logout</span>خروج</button>
+                </li>
+            </ul>
+        </div>
+        <div class="viewBox">
+            <iframe id="iframe"></iframe>
+        </div>
+    </div>
+</div>
+
+<script type="module" defer src="restaurantPanel.js"></script>
+</body>
+</html>

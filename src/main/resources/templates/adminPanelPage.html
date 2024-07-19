@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>پنل ادمین</title>
+  <link rel="stylesheet" href="panel.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="item">
+      <h1 id="title">پنل ادمین</h1>
+    </div>
+    <img src="https://www.mahyashop.com/uploads/UserFiles/Images/Detail-Pics%2F%D8%A8%D9%88%D9%82%D9%84%D9%85%D9%88%D9%86%2FPRODUCT_turkey-03-02-03.png" id="logoImage">
+    <div class="item">
+      <div class="headerCart">
+      </div>
+      <div class="headerItem">
+        <span class="material-symbols-outlined" id="userIcon">person</span>
+        <span id="name">نام</span>
+        <span id="surName">نام خانوادگی</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="toolBox">
+    <div class="navbar">
+      <ul>
+        <li class="navigatorLi">
+          <span class="material-symbols-outlined" style="color: white">menu</span>
+        </li>
+        <li class="navigatorLi" >
+          <button class="navigatorBtn" id="viewProfile"><span class="material-symbols-outlined">person_book</span>مشاهده پروفایل</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewRestaurants"><span class="material-symbols-outlined">storefront</span>رستوران ها</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewCustomers"><span class="material-symbols-outlined">group</span>مشتریان</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewDeliverers"><span class="material-symbols-outlined">group</span>پیک ها</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewReceipts"><span class="material-symbols-outlined">card_membership</span>رسید تسویه حساب</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewIncomes"><span class="material-symbols-outlined">card_membership</span>آمار درآمد ها</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewOrders"><span class="material-symbols-outlined">card_membership</span>سفارش ها</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewSubscriptions"><span class="material-symbols-outlined">card_membership</span>اشتراک ها</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="viewSupportRequests"><span class="material-symbols-outlined">support_agent</span>درخواست های پشتیبانی</button>
+        </li>
+        <li class="navigatorLi">
+          <button class="navigatorBtn" id="exit"><span class="material-symbols-outlined">logout</span> خروج</button>
+        </li>
+      </ul>
+    </div>
+    <div class="viewBox">
+      <iframe id="iframe"></iframe>
+    </div>
+  </div>
+</div>
+
+<script type="module" defer src="adminPanel.js"></script>
+</body>
+</html>

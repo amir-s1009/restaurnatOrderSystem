@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>پنل مشتری</title>
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="customerPopUp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/mapp.min.css">
+    <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/fa/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="item" id="panelType">
+            <h1 id="title">پنل مشتریان</h1>
+        </div>
+        <img src="https://www.mahyashop.com/uploads/UserFiles/Images/Detail-Pics%2F%D8%A8%D9%88%D9%82%D9%84%D9%85%D9%88%D9%86%2FPRODUCT_turkey-03-02-03.png" id="logoImage">
+        <div class="item">
+            <div class="headerCart">
+                <span class="material-symbols-outlined" id="cartIcon">shopping_cart_checkout</span>
+            </div>
+            <div class="headerItem">
+                <span class="material-symbols-outlined" id="userIcon">person</span>
+                <span id="name">نام</span>
+                <span id="surName">نام خانوادگی</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="toolBox">
+        <div class="navbar">
+            <ul>
+                <li class="navigatorLi">
+                    <span class="material-symbols-outlined" style="color: white">menu</span>
+                </li>
+                <li class="navigatorLi" >
+                    <button class="navigatorBtn" id="viewWallet"> موجودی کیف پول : <span id="balance"> ریال </span></button>
+                </li>
+                <li class="navigatorLi"  style="justify-content: center">
+                    <button class="navigatorBtn" id="viewFulfillingOrder" style="text-align: center">...سفارش در حال انجام...</button>
+                </li>
+                <li class="navigatorLi" >
+                    <button class="navigatorBtn" id="viewProfile"><span class="material-symbols-outlined">person_book</span>مشاهده پروفایل</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="viewOrders"><span class="material-symbols-outlined">menu_book</span>مشاهده سفارش ها</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="viewRestaurants"><span class="material-symbols-outlined">storefront</span> مشاهده رستوران ها</button>
+                </li>
+                <li class="navigatorLi">
+                    <button class="navigatorBtn" id="exit"><span class="material-symbols-outlined">logout</span> خروج</button>
+                </li>
+            </ul>
+        </div>
+        <div class="viewBox">
+            <iframe id="iframe"></iframe>
+        </div>
+    </div>
+</div>
+
+<script type="module" defer src="customerPanel.js"></script>
+<script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.env.js"></script>
+<script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.min.js"></script>
+</body>
+</html>

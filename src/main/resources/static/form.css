@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 2%;
+    width: 50%;
+    border-radius: 15px;
+    background-color: #423128;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+.item{
+    margin-top: 25px;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+label{
+    font-size: 17px;
+    color: #c3fffe;
+}
+.input{
+    width: 60%;
+    border-radius: 7px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #c3fffe;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+input{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    color: white;
+}
+input:focus{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin-top: 60px;
+}
+.button button{
+    width: 50%;
+    padding: 2% 3%;
+    border: 2px solid #02a402;
+    background-color: rgba(2, 144, 2, 0);
+    border-radius: 8px;
+    transition: 0.4s;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: #02a402;
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 90%;
+    }
+    .item{
+        width: 90%;
+    }
+    .button{
+        margin-top: 30px;
+    }
+    .button button{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود</title>
+    <link rel="stylesheet" href="logIn.css">
+</head>
+<body id="body">
+    <div class="container">
+        <div class="item" style="justify-content: center">
+            <img src="https://www.mahyashop.com/uploads/UserFiles/Images/Detail-Pics%2F%D8%A8%D9%88%D9%82%D9%84%D9%85%D9%88%D9%86%2FPRODUCT_turkey-03-02-03.png" alt="logo" style="width: 100px; height: 100px;">
+        </div>
+        <div class="item">
+            <label>نام کاربری</label>
+            <input type="text" class="info" id="userName">
+        </div>
+        <div class="item">
+            <label>رمز عبور</label>
+            <input type="password" class="info" id="passWord">
+        </div>
+        <div class="item typeItem">
+            <label for="customer">مشتری</label>
+            <input type="radio" id="customer" name="type">
+            <label for="restaurant">رستوران</label>
+            <input type="radio" id="restaurant" name="type">
+            <label for="deliverer">پیک</label>
+            <input type="radio" id="deliverer" name="type">
+            <label for="admin">ادمین سایت</label>
+            <input type="radio" id="admin" name="type">
+        </div>
+        <div class="button">
+            <button id="logInBtn">ورود</button>
+        </div>
+       <div class="item typeItem" style="margin-top: 40px; align-items: flex-end">
+           <button id="customerSignUpBtn">ثبت نام مشتری</button>
+           <button id="restaurantSignUpBtn">عضویت رستوران</button>
+           <button id="delivererSignUpBtn">عضویت پیک</button>
+       </div>
+    </div>
+<script type="module" defer src="logIn.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+#viewWallet{
+    color: #00ff00;
+    font-size: 15px;
+    border-bottom: 2px solid #00ff00;
+}
+#viewWallet:hover{
+    background-color: #00ff00;
+    color: #a62e02;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#logoImage{
+    width: 100px;
+    height: 100px;
+}
+.header{
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-plain-dark-brown-brown-wallpaper-background-used-vignette-frames-presentations-studio-backgrounds-boards-laminate-furniture-floor-tiles_1258-83101.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: space-between;
+    width: 95%;
+    height: 115px;
+    padding: 1% 3%;
+    align-items: center;
+    flex-flow: wrap;
+}
+.header .item,#panelType{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    direction: rtl;
+    align-items: center;
+}
+.header .item .headerItem{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: space-around;
+    width: 45%;
+    flex-flow: wrap;
+    align-items: center;
+}
+.header .item .headerCart{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: center;
+    width: 50%;
+}
+.header .item h1{
+    color: white;
+    font-size: 22px;
+    min-width: 200px;
+}
+#cartIcon{
+    color: orange;
+    font-size: 30px;
+    cursor: pointer;
+}
+#userIcon{
+    color: white;
+    font-size: 30px;
+}
+.header .item .headerItem span{
+    color: white;
+    font-size: 20px;
+}
+.toolBox{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #463528;
+    min-height: 600px;
+    flex-flow: wrap;
+}
+.toolBox .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+    transition: 1s;
+    overflow-x: hidden;
+}
+.toolBox .navbar ul{
+    list-style: none;
+    width: 100%;
+}
+.toolBox .navbar .navigatorBtn{
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(150, 72, 45, 0);
+    transition: 0.6s;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: 2px solid #96482d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    color: #ff8000;
+    min-width: 200px;
+}
+.toolBox .navbar .navigatorBtn:hover{
+    background-color: rgb(150, 72, 45);
+    color: white;
+}
+.toolBox .viewBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 77%;
+    min-width: 300px;
+    min-height: 600px;
+    transition: 1s;
+}
+.toolBox .viewBox iframe{
+    width: 100%;
+    padding: 1% 2%;
+    border: none;
+}
+
+@media (max-width: 400px) {
+    #logoImage{
+        display: none;
+    }
+    .header #panelType{
+        display: none;
+    }
+    .header .item{
+        width: 95%;
+        direction: ltr;
+    }
+    .header .item .headerItem{
+        width: 60%;
+    }
+    .header .item .headerCart{
+        width: 35%;
+        justify-content: flex-end;
+    }
+    .header .item .headerItem span{
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    .toolBox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .toolBox .navbar{
+        width: 90%;
+    }
+    .toolBox .viewBox{
+        width: 100%;
+    }
+
+
+}

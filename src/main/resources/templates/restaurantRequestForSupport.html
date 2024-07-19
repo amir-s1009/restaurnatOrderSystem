@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formView.css">
+    <link rel="stylesheet" href="customerPopUp.css">
+</head>
+<body>
+<div class="container">
+    <div class="component" id="header">
+        <h1>درخواست پشتیبانی</h1>
+    </div>
+    <div class="button">
+        <button id="viewResponse">مشاهده درخواست ها</button>
+    </div>
+    <div class="component" id="infoBox">
+        <div class="item">
+            <label>موضوع درخواست</label>
+            <input type="text" id="subject">
+        </div>
+        <div class="item">
+            <label>توضیح درخواست</label>
+            <textarea  id="description" style="resize: vertical"></textarea>
+        </div>
+        <div class="button">
+            <button id="submit">ثبت درخواست</button>
+        </div>
+    </div>
+</div>
+<script type="module" defer src="restaurantRequestForSupport.js"></script>
+</body>
+</html>

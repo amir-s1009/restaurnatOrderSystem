@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="itemView.css">
+    <link rel="stylesheet" href="customerPopUp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .restaurantCard .infoBox input{
+            width: 70%;
+            padding: 0.5% 1%;
+            font-size: 17px;
+            text-align: center;
+            border-radius: 5px;
+            color: orangered;
+            transition: 0.4s;
+        }
+        .restaurantCard .infoBox input:focus{
+            outline: 1px solid orange;
+        }
+        #addFoodContent{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        #addFoodContent h1{
+            font-size: 130px;
+            color: orange;
+        }
+        #header{
+            direction: rtl;
+            justify-content: space-between;
+        }
+        #header button{
+            border: 2px solid orangered;
+            background-color: rgba(255, 69, 0, 0);
+            font-size: 16px;
+            color: white;
+            width: 15%;
+            min-width: 100px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        #header button:hover{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="component" id="header">
+        <h1>مدیریت منوی غذا</h1>
+        <button id="submit">ثبت ویرایش</button>
+    </div>
+    <div class="component" id="searchBox">
+        <div>
+            <input type="text" placeholder="غذای مورد نظر را وارد کنید...">
+            <button id="search">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </div>
+    </div>
+    <div class="component" id="restaurantBox">
+    </div>
+</div>
+
+<script type="module" defer src="restaurantViewFoodMenu.js"></script>
+</body>
+</html>

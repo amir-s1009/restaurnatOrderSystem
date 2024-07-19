@@ -1,0 +1,306 @@
+.popUpContainer{
+    direction: rtl;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 16px;
+    position: fixed;
+    background-color: #ffd7a7;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.popUpContainer .closeButtonContainer{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: flex-start;
+    padding: 2% 1%;
+    width: 98%;
+}
+.popUpContainer .closeButtonContainer button{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: red;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid red;
+    transition: 0.5s;
+    background-color: rgba(91, 68, 58, 0);
+}
+.popUpContainer .closeButtonContainer button:hover{
+    color: darkred;
+    font-size: 16px;
+}
+
+#fulfillingOrder{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 200px;
+    left: 40%;
+    max-height: 250px;
+}
+#cartContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    left: 18%;
+    max-height: 350px;
+    min-width: 300px;
+}
+#cartContainer #tableBox{
+    display: table;
+    width: 90%;
+    margin-top: 15px;
+}
+#cartContainer table{
+    width: 100%;
+}
+#cartContainer th{
+    min-width: 60px;
+}
+#cartContainer td{
+    min-width: 60px;
+    text-align: center;
+    font-size: 16px;
+    flex-flow: wrap;
+    background-color: #fac1af;
+    color: brown;
+    padding: 1.5%;
+    font-weight: 800;
+}
+#cartContainer td button{
+    width: 100%;
+    font-size: 14px;
+    transition: 0.4s;
+    background-color: #fac1af;
+    border: none;
+    flex-flow: wrap;
+    cursor: pointer;
+}
+#cartContainer td button:hover{
+    color: white;
+}
+#cartContainer td #increase{
+    border-bottom: 2px solid green;
+    color: green;
+}
+#cartContainer td #increase:hover{
+    background-color: green;
+    color: white;
+}
+#cartContainer td #decrease{
+    border-bottom: 2px solid red;
+    color: red;
+}
+#cartContainer td #decrease:hover{
+    background-color: red;
+    color: white;
+}
+#cartContainer td  #delete{
+    border-bottom: 2px solid mediumpurple;
+    color: mediumpurple;
+}
+#cartContainer td #delete:hover{
+    background-color: mediumpurple;
+    color: white;
+}
+#cartContainer .cartItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    direction: rtl;
+    width: 80%;
+    margin-top: 15px;
+    flex-flow: wrap;
+}
+#cartContainer .cartItem #finalPayment{
+    font-size: 22px;
+    font-weight: 800;
+    color: green;
+}
+#cartContainer .button{
+    width: 80%;
+    color: #1f1f1f;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+    padding : 2% 0.5%;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#cartContainer .button:hover{
+    color: white;
+}
+#cartContainer #selectOnMap{
+    background-color: rgba(165, 42, 42, 0);
+    border : 2px solid brown;
+}
+#cartContainer #selectOnMap:hover{
+    background-color: brown;
+}
+#cartContainer #submitOrder{
+    background-color: rgba(0, 128, 0, 0);
+    border: 2px solid green;
+}
+#cartContainer #submitOrder:hover{
+    background-color: green;
+}
+#cartContainer .cartItem h1{
+    font-size: 18px;
+    color: saddlebrown;
+}
+#cartContainer .cartItem input{
+    background-color: #ffd5b5;
+    width : 100%;
+    border : 2px solid orangered;
+    font-size : 15px;
+    border-radius: 6px;
+    padding : 2% 0.5%;
+    outline: none;
+}
+
+.walletContainer{
+    left: 25%;
+    top : 100px;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+.walletItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 85%;
+    align-items: center;
+    margin-top: 20px;
+}
+.walletItem input{
+    background-color: #ffd5b5;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid green;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    outline: none;
+    transition: 0.4s;
+}
+.walletItem input:focus{
+    border-bottom: 3px solid green;
+}
+.walletItem h1{
+    font-size: 18px;
+}
+.walletContainer .button{
+    margin-top: 30px;
+    cursor: pointer;
+    width: 40%;
+    background-color: rgba(0, 128, 0, 0);
+    border: none;
+    border-bottom : 2px solid green;
+    color: green;
+    font-size: 16px;
+    padding: 2% 0%;
+    transition: 0.4s;
+}
+.walletContainer .button:hover{
+    background-color: green;
+    color: white;
+}
+#mapWrapper{
+    left: 20%;
+    top: 100px;
+    height: 400px;
+    width: 60%;
+}
+#mapFrame{
+    width: 100%;
+    height: 100%;
+}
+#restaurantViewResponse{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    left: 15%;
+    top: 50px;
+    height: 300px;
+}
+.tableView{
+    position: fixed;
+    left: 10%;
+    top: 50px;
+    width: 70%;
+    max-height: 300px;
+}
+.tableView table{
+    width: 100%;
+}
+.tableView th{
+    background-color: #4f4734;
+    min-width: 100px;
+    padding: 2%;
+    color: white;
+    font-size: 17px;
+}
+.tableView td{
+    flex-flow: wrap;
+    text-align: center;
+    padding: 2%;
+    background-color: whitesmoke;
+    color:#4f4734;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    padding: 3%;
+    align-items: center;
+}
+.infoBox{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    direction: rtl;
+    padding: 1%;
+    text-align: right;
+    margin-top: 10px;
+}
+.infoLabel{
+    font-size: 17px;
+    color: #4b4b4b;
+    font-weight: 600;
+}
+.infoValue{
+    font-size: 18px;
+    color: #151515;
+    font-weight: 800;
+}
+
+@media (max-width: 400px) {
+    .walletContainer, .tableView, #mapWrapper, #cartContainer, #restaurantViewResponse{
+        width: 90%;
+        left: 2.5%;
+        height: 450px;
+        top: 50px;
+    }
+
+}
